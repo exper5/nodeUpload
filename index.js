@@ -76,7 +76,7 @@ app.get('/api/file' , (req,res)=>{
     
 });
 
-
-app.listen(3000, function(a) {
-    console.log("Listening to port 3000");
+const port = process.env.PORT||3000;
+app.listen(port, function(a) {
+    console.log("Listening to port "+port);
 });
